@@ -109,12 +109,13 @@ body {
 }
 
 .game-card {
-  background: #fff;
+  background: #111111;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 22px rgba(0, 0, 0, .1);
   text-align: center;
   transition: transform .3s ease;
+  border: 1px solid white
 }
 
 .game-card:hover {
@@ -136,7 +137,7 @@ body {
 .game-card p {
   font-size: 0.9rem;
   padding: 0 10px 16px;
-  color: #444;
+  color: white;
 }
 
 footer {
@@ -300,4 +301,5 @@ footer {
     padding: 4px 8px;
   }
 }
+
 
