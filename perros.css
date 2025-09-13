@@ -109,6 +109,9 @@ body {
 }
 
 .game-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: #111111;
   border-radius: 12px;
   overflow: hidden;
@@ -116,6 +119,7 @@ body {
   text-align: center;
   transition: transform .3s ease;
   border: 1px solid white;
+  color : white;
 }
 
 .game-card:hover {
@@ -132,13 +136,13 @@ body {
 .game-card h2 {
   margin: 12px 0 6px;
   font-size: 1.2rem;
-  color: white;
 }
 
 .game-card p {
   font-size: 0.9rem;
   padding: 0 10px 16px;
-  color: white;
+  color: #444;
+  color: #ffffff;
 }
 
 footer {
@@ -165,16 +169,18 @@ footer {
 
 
     .btn-precio {
-      bottom: 435px;
-      left: 10px;
-      background: red;
-      font-size: 15px;
-      font-weight: bold;
-      box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
-      position: relative;
-      top: 20px;
-      left: 130px;
-    }
+  margin: 15px auto;
+  background: red;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+  position: static;
+}
 
 
     .extra {
@@ -217,7 +223,6 @@ footer {
       display: inline;
     }
 
-    
 @media (max-width: 1030px) {
   .navbar {
     flex-direction: column;
@@ -302,7 +307,3 @@ footer {
     padding: 4px 8px;
   }
 }
-
-
-
-
