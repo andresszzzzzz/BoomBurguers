@@ -109,12 +109,17 @@ body {
 }
 
 .game-card {
-  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #111111;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 22px rgba(0, 0, 0, .1);
   text-align: center;
   transition: transform .3s ease;
+  border: 1px solid white;
+  color : white;
 }
 
 .game-card:hover {
@@ -135,7 +140,7 @@ body {
 .game-card p {
   font-size: 0.9rem;
   padding: 0 10px 16px;
-  color: #444;
+  color: #ffffff;
 }
 
 footer {
@@ -161,17 +166,19 @@ footer {
     }
 
 
-    .btn-precio {
-      bottom: 435px;
-      left: 10px;
-      background: red;
-      font-size: 15px;
-      font-weight: bold;
-      box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
-      position: relative;
-      top: 20px;
-      left: 130px;
-    }
+   .btn-precio {
+  margin: 15px auto;
+  background: red;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+  position: static;
+}
 
 
     .extra {
@@ -213,7 +220,6 @@ footer {
         .extra:has(~ input[type="checkbox"]:checked) {
       display: inline;
     }
-
 @media (max-width: 1030px) {
   .navbar {
     flex-direction: column;
@@ -298,4 +304,3 @@ footer {
     padding: 4px 8px;
   }
 }
-
