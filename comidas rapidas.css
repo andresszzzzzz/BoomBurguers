@@ -214,55 +214,88 @@ footer {
       display: inline;
     }
 
-@media (max-width: 1024px) {
-  .gallery {
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 1030px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
   }
 
   .hero {
     flex-direction: column;
-    padding: 40px 20px;
     text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 36px;
   }
 
   .hero-img img {
-    max-width: 350px;
+    max-width: 300px;
     margin-top: 20px;
   }
 
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
+  .gallery {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 768px) {
+  .hero-text h2 {
+    font-size: 28px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .game-card h2 {
+    font-size: 1rem;
+  }
+
+  .game-card p {
+    font-size: 0.85rem;
+  }
+
+  .btn-precio {
+    left: 50px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .hero-text h2 {
+    font-size: 22px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .hero-img img {
+    max-width: 220px;
+  }
+
   .gallery {
     grid-template-columns: 1fr;
   }
 
-  .hero {
-    padding: 20px;
-  }
-
-  .hero-text h2 {
-    font-size: 32px;
-  }
-
-  .hero-img img {
-    max-width: 250px;
-  }
-
-  .navbar {
-    padding: 10px 20px;
-  }
-
-  .menu {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .menu a {
-    font-size: 14px;
+  label {
+    font-size: 12px;
+    padding: 4px 8px;
   }
 }
+
