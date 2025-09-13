@@ -32,6 +32,7 @@ body {
 .menu {
   display: flex;
   gap: 20px;
+  padding-left: 20px;
 }
 
 .menu a {
@@ -213,3 +214,57 @@ footer {
         .extra:has(~ input[type="checkbox"]:checked) {
       display: inline;
     }
+
+    
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-img img {
+    max-width: 350px;
+    margin-top: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 32px;
+  }
+
+  .hero-img img {
+    max-width: 250px;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+}
