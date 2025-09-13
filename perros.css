@@ -115,7 +115,7 @@ body {
   box-shadow: 0 4px 22px rgba(0, 0, 0, .1);
   text-align: center;
   transition: transform .3s ease;
-  border: 1px solid white
+  border: 1px solid white;
 }
 
 .game-card:hover {
@@ -301,5 +301,6 @@ footer {
     padding: 4px 8px;
   }
 }
+
 
 
